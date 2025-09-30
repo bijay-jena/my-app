@@ -1,9 +1,144 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
   <diagram name="Page-1" id="S6bTiFra4baXJI56aN1_">
-    <mxGraphModel>
+    <mxGraphModel dx="920" dy="505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="R56lCabFV1OtVi3enDo4-38" value="Core Services" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="585" width="670" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-39" value="Notification Engine" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.bell;" vertex="1" parent="R56lCabFV1OtVi3enDo4-38">
+          <mxGeometry x="88" y="95" width="24" height="23.099999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-14" value="Client Applications" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="130" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-18" value="Web App" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;" vertex="1" parent="R56lCabFV1OtVi3enDo4-14">
+          <mxGeometry x="116" y="200" width="68" height="55.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-15" value="Mobile App" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.smartphone;" vertex="1" parent="R56lCabFV1OtVi3enDo4-14">
+          <mxGeometry x="50" y="36" width="18" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-19" value="Backend &amp;amp; Integration" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="120" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-20" value="Integration Layer: API Gateway" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" vertex="1" parent="R56lCabFV1OtVi3enDo4-19">
+          <mxGeometry x="75" y="76" width="50" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.944;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.225;exitY=0.134;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="R56lCabFV1OtVi3enDo4-19" source="R56lCabFV1OtVi3enDo4-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="86" y="80" as="sourcePoint" />
+            <mxPoint x="-426.998" y="55" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="86" y="55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.971;entryY=0.709;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="R56lCabFV1OtVi3enDo4-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="270" as="sourcePoint" />
+            <mxPoint x="240" y="391.76" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="300" />
+              <mxPoint x="420" y="300" />
+              <mxPoint x="420" y="370" />
+              <mxPoint x="212" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-28" value="&lt;div&gt;Configurable Broadcast Logic&lt;/div&gt;&lt;div&gt;Weighted Selection&lt;/div&gt;&lt;div&gt;Re-broadcast Fallback&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R56lCabFV1OtVi3enDo4-21">
+          <mxGeometry x="-0.0383" y="3" relative="1" as="geometry">
+            <mxPoint y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.049;entryY=0.448;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R56lCabFV1OtVi3enDo4-15" target="R56lCabFV1OtVi3enDo4-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="238" y="185" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="89" y="218" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-25" value="&lt;div&gt;React Native&lt;/div&gt;&lt;div&gt;Secure Push&lt;/div&gt;&lt;div&gt;Offline Support&lt;/div&gt;&lt;div&gt;Screenshot Prevention&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R56lCabFV1OtVi3enDo4-24">
+          <mxGeometry x="-0.0001" relative="1" as="geometry">
+            <mxPoint x="61" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.043;entryY=0.82;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R56lCabFV1OtVi3enDo4-18" target="R56lCabFV1OtVi3enDo4-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="250" />
+              <mxPoint x="580" y="250" />
+              <mxPoint x="580" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-31" value="&lt;div&gt;React Frontend&lt;/div&gt;&lt;div&gt;Node.js/NestJS Backend&lt;/div&gt;&lt;div&gt;Admin Dashboards&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R56lCabFV1OtVi3enDo4-29">
+          <mxGeometry x="-0.3852" y="2" relative="1" as="geometry">
+            <mxPoint x="-10" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-33" value="Infrastructure" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="360" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-34" value="Cloud Infrastructure - AWS/Azure - Singapore" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;fillColor=#3B8DF1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;shape=mxgraph.gcp2.cloud_information" vertex="1" parent="R56lCabFV1OtVi3enDo4-33">
+          <mxGeometry x="75" y="70" width="100" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="R56lCabFV1OtVi3enDo4-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-340" y="310" as="targetPoint" />
+            <mxPoint x="120" y="-90" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="120" y="-20" />
+              <mxPoint x="-10" y="-20" />
+              <mxPoint x="-10" y="100" />
+              <mxPoint x="-340" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.995;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="R56lCabFV1OtVi3enDo4-20" target="R56lCabFV1OtVi3enDo4-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="720" y="226" />
+              <mxPoint x="720" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-37" value="REST/GraphQL API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R56lCabFV1OtVi3enDo4-36">
+          <mxGeometry x="-0.027" y="-1" relative="1" as="geometry">
+            <mxPoint y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-40" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="690" as="sourcePoint" />
+            <mxPoint x="70" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="70" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-41" value="&lt;div&gt;Configurable Broadcast Logic&lt;/div&gt;&lt;div&gt;Weighted Selection&lt;/div&gt;&lt;div&gt;Re-broadcast Fallback&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R56lCabFV1OtVi3enDo4-40">
+          <mxGeometry x="-0.0262" relative="1" as="geometry">
+            <mxPoint x="10" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-43" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="480" as="sourcePoint" />
+            <mxPoint x="200" y="670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R56lCabFV1OtVi3enDo4-44" value="&lt;div&gt;Auto-scaling&lt;/div&gt;&lt;div&gt;High Availability&lt;/div&gt;&lt;div&gt;Encrypted Data (AES-256/TLS 1.2+)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R56lCabFV1OtVi3enDo4-43">
+          <mxGeometry x="-0.1149" relative="1" as="geometry">
+            <mxPoint x="3" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
